@@ -49,11 +49,12 @@ export default {
       color: white;
       font-size: 30px;
     }
-  }
-  .play-cont:hover {
-    background-color: rgb(255, 255, 255);
-    .play-icon {
-      color: purple;
+    //7hover
+    &:hover {
+      background-color: rgb(255, 255, 255);
+      .play-icon {
+        color: purple;
+      }
     }
   }
 }

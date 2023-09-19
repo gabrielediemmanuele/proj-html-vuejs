@@ -69,26 +69,29 @@ export default {
   .button-start {
     background-color: #ffdfed;
     margin: 0 10px;
+    //hover
+    &:hover {
+      background-color: transparent;
+      border: none;
+      box-shadow: 0 0 6px 2px #ffdfed;
+      color: white;
+    }
   }
-  .button-start:hover {
-    background-color: transparent;
-    border: none;
-    box-shadow: 0 0 6px 2px #ffdfed;
-    color: white;
-  }
+
   .button-portfolio {
     background-color: transparent;
     border: none;
     box-shadow: 0px 0px 3px 1px #ffdfed;
     color: white;
     margin: 0 10px;
-  }
-  .button-portfolio:hover {
-    background-color: #ff7a1f;
-    border: none;
-    box-shadow: 0 0 6px 2px #ff7a1f;
-    color: rgb(43, 0, 99);
-    margin: 0 10px;
+    //hover
+    &:hover {
+      background-color: #ff7a1f;
+      border: none;
+      box-shadow: 0 0 6px 2px #ff7a1f;
+      color: rgb(43, 0, 99);
+      margin: 0 10px;
+    }
   }
 }
 </style>

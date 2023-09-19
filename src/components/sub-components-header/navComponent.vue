@@ -51,21 +51,21 @@ export default {
     li {
       margin: 0 10px 0 10px;
       color: white;
-    }
-
-    li:hover {
-      margin: 0 10px 0 10px;
-      color: #ff7a1f;
+      //hover
+      &:hover {
+        margin: 0 10px 0 10px;
+        color: #ff7a1f;
+      }
     }
   }
 }
 .button {
   background-color: #ffdfed;
-}
-.button:hover {
-  background-color: transparent;
-  border: none;
-  box-shadow: 0 0 6px 2px #ffdfed;
-  color: white;
+  &:hover {
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 0 6px 2px #ffdfed;
+    color: white;
+  }
 }
 </style>
