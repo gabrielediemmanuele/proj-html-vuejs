@@ -1,11 +1,16 @@
 <script>
+// imports
 import navComponent from "./sub-components-header/navComponent.vue";
+import jumbotronBlock from "./sub-components-header/jumbotronBlock.vue";
+
+// exports
 export default {
   data() {
     return {};
   },
   components: {
     navComponent,
+    jumboCont: jumbotronBlock,
   },
 };
 </script>
@@ -16,7 +21,7 @@ export default {
     <!--* Navigation bar-->
     <navComponent></navComponent>
     <!--* jumbo container -->
-    <div class="jumbotron"></div>
+    <jumboCont></jumboCont>
     <!--* videoplayer container-->
     <div class="video-player"></div>
   </header>
