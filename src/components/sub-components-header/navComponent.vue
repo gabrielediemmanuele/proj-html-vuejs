@@ -62,4 +62,10 @@ export default {
 .button {
   background-color: #ffdfed;
 }
+.button:hover {
+  background-color: transparent;
+  border: none;
+  box-shadow: 0 0 6px 2px #ffdfed;
+  color: white;
+}
 </style>
