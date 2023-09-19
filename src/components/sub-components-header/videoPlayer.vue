@@ -19,7 +19,6 @@ export default {
     <div class="play-cont">
       <font-awesome-icon class="play-icon" icon="fa-solid fa-play" />
     </div>
-
     <img src="../../assets/middle.png" alt="videoplayer image" />
   </div>
 </template>
@@ -34,6 +33,8 @@ export default {
   align-items: center;
   border: 2px dashed rgb(242, 222, 184);
   position: relative;
+  overflow: hidden;
+  z-index: 1;
 
   .play-cont {
     width: 60px;
@@ -45,6 +46,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
     .play-icon {
       color: white;
       font-size: 30px;
@@ -52,6 +54,7 @@ export default {
     //7hover
     &:hover {
       background-color: rgb(255, 255, 255);
+
       .play-icon {
         color: purple;
       }
