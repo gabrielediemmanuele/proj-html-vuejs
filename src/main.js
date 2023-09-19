@@ -6,9 +6,9 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-/* import { faStar as faStarSolid } from "@fortawesome/free-solid-svg-icons"; */
+import { faPlay as faPlaySolid } from "@fortawesome/free-solid-svg-icons";
 
-library.add(/* faStarSolid */);
+library.add(faPlaySolid);
 
 const app = createApp(App);
 app.component("font-awesome-icon", FontAwesomeIcon);

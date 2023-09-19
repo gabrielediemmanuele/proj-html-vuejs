@@ -2,6 +2,7 @@
 // imports
 import navComponent from "./sub-components-header/navComponent.vue";
 import jumbotronBlock from "./sub-components-header/jumbotronBlock.vue";
+import videoPlayer from "./sub-components-header/videoPlayer.vue";
 
 // exports
 export default {
@@ -11,6 +12,7 @@ export default {
   components: {
     navComponent,
     jumboCont: jumbotronBlock,
+    videoPlayer,
   },
 };
 </script>
@@ -23,7 +25,7 @@ export default {
     <!--* jumbo container -->
     <jumboCont></jumboCont>
     <!--* videoplayer container-->
-    <div class="video-player"></div>
+    <videoPlayer></videoPlayer>
   </header>
 </template>
 
