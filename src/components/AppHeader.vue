@@ -1,14 +1,12 @@
 <script>
-import DefaultContainer from "./micro-components/DefaultContainer.vue";
+import navComponent from "./sub-components-header/navComponent.vue";
 export default {
   data() {
-    return {
-      title: "Hello world",
-    };
+    return {};
   },
 
   components: {
-    DefaultContainer,
+    navComponent,
   },
 };
 </script>
@@ -16,30 +14,11 @@ export default {
 <template>
   <!--* header container  -->
   <header>
-    <!--* navigation menu -->
-    <nav>
-      <DefaultContainer class="nav-cont">
-        <div>logo</div>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <button></button>
-      </DefaultContainer>
-    </nav>
+    <navComponent></navComponent>
     <!--* jumbo container -->
-    <div class="jumbotron">
-      <DefaultContainer> </DefaultContainer>
-    </div>
+    <div class="jumbotron"></div>
     <!--* videoplayer container-->
-    <div class="video-player">
-      <DefaultContainer> </DefaultContainer>
-    </div>
+    <div class="video-player"></div>
   </header>
 </template>
 
@@ -52,12 +31,5 @@ header {
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
-
-  nav {
-    .nav-cont {
-      display: flex;
-      height: 50px;
-    }
-  }
 }
 </style>
