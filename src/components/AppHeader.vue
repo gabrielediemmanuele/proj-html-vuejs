@@ -4,7 +4,6 @@ export default {
   data() {
     return {};
   },
-
   components: {
     navComponent,
   },
@@ -14,6 +13,7 @@ export default {
 <template>
   <!--* header container  -->
   <header>
+    <!--* Navigation bar-->
     <navComponent></navComponent>
     <!--* jumbo container -->
     <div class="jumbotron"></div>
