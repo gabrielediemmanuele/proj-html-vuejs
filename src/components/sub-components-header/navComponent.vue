@@ -34,7 +34,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import "../../";
+@import "../../partials/variables";
 .nav-cont {
   width: 80%;
   margin: 0 auto;
@@ -56,7 +56,7 @@ export default {
       //hover
       &:hover {
         margin: 0 10px 0 10px;
-        color: #ff7a1f;
+        color: $orange_color;
       }
     }
   }

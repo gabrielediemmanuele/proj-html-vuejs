@@ -1,19 +1,21 @@
 <script>
-// import MyComponent from "./components/MyComponent.vue";
+import LoveAnimation from "../components/sub-components-main/LoveAnimation.vue";
 
 export default {
   data() {
     return {};
   },
 
-  // components: {
-  //   MyComponent,
-  // },
+  components: {
+    LoveAnimation,
+  },
 };
 </script>
 
 <template>
-  <main class="main-container"></main>
+  <main class="main-container">
+    <LoveAnimation></LoveAnimation>
+  </main>
 </template>
 
 <style lang="scss" scoped>
