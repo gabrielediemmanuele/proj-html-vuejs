@@ -1,5 +1,6 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
+import AppMain from "./components/AppMain.vue";
 
 export default {
   data() {
@@ -8,6 +9,7 @@ export default {
 
   components: {
     AppHeader,
+    AppMain,
   },
 };
 </script>
@@ -15,13 +17,13 @@ export default {
 <template>
   <div class="global-container">
     <AppHeader></AppHeader>
+    <AppMain></AppMain>
   </div>
 </template>
 
 <style lang="scss">
 .global-container {
   width: 100%;
-  height: 100%;
   border: 2px dashed red;
 }
 * {

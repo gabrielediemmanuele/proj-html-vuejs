@@ -33,9 +33,6 @@ export default {
   align-items: center;
   border: 2px dashed rgb(242, 222, 184);
   position: relative;
-  overflow: hidden;
-  z-index: 1;
-
   .play-cont {
     width: 60px;
     height: 60px;

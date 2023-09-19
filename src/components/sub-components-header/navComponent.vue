@@ -1,5 +1,6 @@
 <script>
 import buttonModel from "../micro-components/buttonModel.vue";
+
 export default {
   data() {
     return {
@@ -33,6 +34,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@import "../../";
 .nav-cont {
   width: 80%;
   margin: 0 auto;
