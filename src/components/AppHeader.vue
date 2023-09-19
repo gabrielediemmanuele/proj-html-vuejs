@@ -1,6 +1,4 @@
 <script>
-// import MyComponent from "./components/MyComponent.vue";
-
 export default {
   data() {
     return {
@@ -15,7 +13,21 @@ export default {
 </script>
 
 <template>
-  <h1>{{ title }}</h1>
+  <!--* header container  -->
+  <header>
+    <!--* navigation menu -->
+    <nav></nav>
+    <!--* jumbo container -->
+    <div class="jumbotron"></div>
+    <!--* videoplayer container-->
+    <div class="video-player"></div>
+  </header>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+header {
+  width: 100%;
+  height: 1000px;
+  border: 1px dashed green;
+}
+</style>
