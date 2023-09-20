@@ -10,7 +10,19 @@ import { faPlay as faPlaySolid } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight as faArrowRightSolid } from "@fortawesome/free-solid-svg-icons";
 import { faArrowLeft as faArrowLeftSolid } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faPlaySolid, faArrowRightSolid, faArrowLeftSolid);
+//SOCIALS
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+
+library.add(
+  faPlaySolid,
+  faArrowRightSolid,
+  faArrowLeftSolid,
+  faFacebook,
+  faTwitter,
+  faInstagram
+);
 
 const app = createApp(App);
 app.component("font-awesome-icon", FontAwesomeIcon);
