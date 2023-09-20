@@ -23,11 +23,11 @@ export default {
   <div class="partners-cont">
     <!--* text container -->
     <div class="text-container">
-      <span class="slogan">Anidio Magic Team Members</span>
-      <h1 class="title">Let Us Animate Your Project</h1>
+      <span class="slogan">Why Anidio studio?</span>
+      <h1 class="title">We Love Our CLients</h1>
       <span class="spanning"
-        >We create new worlds! Let's collaborate and create engaging, effective,
-        award-winning animations.</span
+        >We are trusted throughout adland and have a wealth of recommendations
+        from start-ups to renowned global brands.</span
       >
     </div>
     <!--* partners logo container -->
