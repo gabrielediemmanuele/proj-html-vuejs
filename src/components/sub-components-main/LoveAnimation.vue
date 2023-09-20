@@ -32,27 +32,29 @@ export default {
 </script>
 
 <template>
-  <!--* TEXT CONTAINER  -->
-  <div class="text-container">
-    <span class="slogan">Our Love For Animation</span>
-    <h1 class="title">We're Storytelling Experts With Creative Smarts</h1>
-    <span class="spanning"
-      >Our culture inspires the creative and innovative spirit found throudhout
-      our Studio. We breathe life into new idea!</span
-    >
-  </div>
+  <div class="love-animation">
+    <!--* TEXT CONTAINER  -->
+    <div class="text-container">
+      <span class="slogan">Our Love For Animation</span>
+      <h1 class="title">We're Storytelling Experts With Creative Smarts</h1>
+      <span class="spanning"
+        >Our culture inspires the creative and innovative spirit found
+        throudhout our Studio. We breathe life into new idea!</span
+      >
+    </div>
 
-  <!--* CARD CONTAINER-->
-  <div class="cards-cont">
-    <div
-      class="card"
-      v-for="(card, index) in cards"
-      :key="index"
-      :style="{ 'background-image': card.bgGradient }"
-    >
-      <img :src="card.cardImage" :alt="card.cardTitle" />
-      <h3>{{ card.cardTitle }}</h3>
-      <p>{{ card.text }}</p>
+    <!--* CARD CONTAINER-->
+    <div class="cards-cont">
+      <div
+        class="card"
+        v-for="(card, index) in cards"
+        :key="index"
+        :style="{ 'background-image': card.bgGradient }"
+      >
+        <img :src="card.cardImage" :alt="card.cardTitle" />
+        <h3>{{ card.cardTitle }}</h3>
+        <p>{{ card.text }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -61,10 +63,16 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Share+Tech+Mono&display=swap");
 @import "../../partials/variables";
 
+.love-animation {
+  background-image: url(../../src/assets/smarttwo.png);
+  background-repeat: no-repeat;
+  background-position: left -340px top -160px;
+  background-size: 1000px;
+}
 /* text container style  */
 .text-container {
   width: 50%;
-  margin: 20px auto;
+  margin: auto;
   padding: 20px;
   display: flex;
   flex-direction: column;

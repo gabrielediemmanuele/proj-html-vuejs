@@ -22,10 +22,6 @@ export default {
 .main-container {
   width: 100%;
   margin: 0 auto;
-  background-image: url(../../src/assets/smarttwo.png);
-  background-repeat: no-repeat;
-  background-position: left -340px top -160px;
-  background-size: 1000px;
-  border: 2px dashed red;
+  border: 3px dashed red;
 }
 </style>
