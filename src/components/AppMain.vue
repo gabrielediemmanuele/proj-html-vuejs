@@ -4,6 +4,7 @@ import LoveAnimation from "../components/sub-components-main/LoveAnimation.vue";
 import AnidioQuick from "../components/sub-components-main/AnidioQuick.vue";
 import OurWorks from "../components/sub-components-main/OurWorks.vue";
 import OurProcess from "../components/sub-components-main/OurProcess.vue";
+import AnidioTeamMembers from "../components/sub-components-main/AnidioTeamMembers.vue";
 //export
 export default {
   data() {
@@ -15,6 +16,7 @@ export default {
     AnidioQuick,
     OurWorks,
     OurProcess,
+    AnidioTeamMembers,
   },
 };
 </script>
@@ -25,6 +27,7 @@ export default {
     <AnidioQuick></AnidioQuick>
     <OurWorks></OurWorks>
     <OurProcess></OurProcess>
+    <AnidioTeamMembers></AnidioTeamMembers>
   </main>
 </template>
 
