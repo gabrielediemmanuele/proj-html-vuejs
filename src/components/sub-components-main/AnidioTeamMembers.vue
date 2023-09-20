@@ -28,9 +28,9 @@ export default {
     <!--* members cards cont cont-->
     <div class="cards-cont">
       <div class="card">
-        <img src="" alt="" />
-        <h3></h3>
-        <span></span>
+        <img src="../../assets/team1.png" alt="" />
+        <h3>Robert Coleman</h3>
+        <span>Owner & Creative Director</span>
         <div class="icons-cont"></div>
       </div>
     </div>
@@ -100,7 +100,11 @@ export default {
   height: 400px;
   border: 2px dashed skyblue;
   margin: 0 auto;
+
+  .card {
+  }
 }
+
 //arrows
 .arrows-cont {
   width: 80%;
