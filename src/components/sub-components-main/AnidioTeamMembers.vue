@@ -112,6 +112,10 @@ export default {
 .team-members {
   width: 100%;
   border: 2px dashed rgb(0, 255, 153);
+  background-image: url(../../assets/shape.png), url(../../assets/shape2.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 50%, 50%;
+  background-position: left, right;
 }
 // text container css
 .text-container {
@@ -145,7 +149,7 @@ export default {
 //cards
 .cards-cont {
   width: 80%;
-  height: 400px;
+  padding: 30px 0;
   border: 2px dashed skyblue;
   margin: 0 auto;
   display: flex;
