@@ -12,20 +12,21 @@ export default {
     <!--*  contents  -->
     <div class="contents-cont">
       <span class="slogan">Imagine, Create, Experience</span>
-      <h1 class="title">
-        We Animate <br />
-        Whit Ninja-Like Precision
-      </h1>
+      <h1 class="title">We Animate Whit Ninja-Like Precision</h1>
       <span class="spanning"
         >We are a character-driven animation studio striving to make
         high-quality animations.</span
       >
     </div>
+    <!--*submit container-->
     <div class="submit-cont">
-      <form action="">
-        <input type="text" name="" id="" placeholder="bellali" />
-        <button type="button">ciao</button>
-      </form>
+      <input
+        type="text"
+        name=""
+        id=""
+        placeholder="Enter here your E-mail..."
+      />
+      <button type="button">Submit</button>
     </div>
   </div>
 </template>
@@ -83,24 +84,33 @@ export default {
 
   //submit customs
   .submit-cont {
-    form {
-      display: flex;
-      border: none;
-      padding: 1px;
-      width: 700px;
-    }
+    width: 60%;
+    position: relative;
 
     input {
-      flex-grow: 2;
-      padding: 10px;
+      width: 100%;
+      padding: 10px 20px;
       border: none;
       border-radius: 20px;
+      /* outline: none; */
     }
 
     button {
-      border: 1px solid blue;
-      background: blue;
-      color: white;
+      position: absolute;
+      top: 3px;
+      right: 5px;
+      padding: 7px 15px;
+      z-index: 2;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      color: $purple_color;
+      background-color: $pink_color;
+    }
+
+    button:hover {
+      background-color: $purple_color;
+      color: $pink_color;
     }
   }
 }
