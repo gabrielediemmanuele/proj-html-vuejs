@@ -51,7 +51,6 @@ export default {
 //general css
 .our-works {
   width: 100%;
-  height: 500px;
   border: 2px dashed rgb(0, 255, 153);
 }
 // text container css
