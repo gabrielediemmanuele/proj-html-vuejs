@@ -6,6 +6,8 @@ import OurWorks from "../components/sub-components-main/OurWorks.vue";
 import OurProcess from "../components/sub-components-main/OurProcess.vue";
 import AnidioTeamMembers from "../components/sub-components-main/AnidioTeamMembers.vue";
 import WhyAnidio from "../components/sub-components-main/WhyAnidio.vue";
+import CreateWorlds from "../components/sub-components-main/CreateWorlds.vue";
+
 //export
 export default {
   data() {
@@ -19,6 +21,7 @@ export default {
     OurProcess,
     AnidioTeamMembers,
     WhyAnidio,
+    CreateWorlds,
   },
 };
 </script>
@@ -31,6 +34,7 @@ export default {
     <OurProcess></OurProcess>
     <AnidioTeamMembers></AnidioTeamMembers>
     <WhyAnidio></WhyAnidio>
+    <CreateWorlds></CreateWorlds>
   </main>
 </template>
 

@@ -62,8 +62,8 @@ export default {
   //facts cont
   .facts-cont {
     width: 80%;
-    height: 300px;
     border: 2px dashed lime;
+    margin: 20px 0;
 
     .title-cont h1 {
       font-family: "Bagel Fat One", cursive;

@@ -1,0 +1,77 @@
+<script>
+export default {
+  data() {
+    return {};
+  },
+};
+</script>
+
+<template>
+  <div class="create-worlds">
+    <div class="contents-cont">
+      <div class="jumbotron">
+        <span class="slogan">Imagine, Create, Experience</span>
+        <h1 class="title">
+          We Animate <br />
+          Whit Ninja-Like Precision
+        </h1>
+        <span class="spanning"
+          >We are a character-driven animation studio striving to make
+          high-quality animations.</span
+        >
+      </div>
+    </div>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+//font and variables scss
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Share+Tech+Mono&display=swap");
+@import "../../partials/variables";
+
+//main container
+.create-worlds {
+  width: 100%;
+  height: 400px;
+  border: 2px solid yellow;
+  //background elements settings
+  background-image: url(../../assets/shape-bottom.png),
+    url(../../assets/shape-top.png), url(../../assets/preloader.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: bottom, top, center;
+  background-size: auto, auto, cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  //contents-container
+  .contents-cont {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border: 1px dashed orange;
+    .slogan {
+      font-size: 15px;
+      color: $orange_color;
+      margin: 5px 0;
+    }
+    .title {
+      color: $white_color;
+      font-size: 50px;
+      font-family: "Bagel Fat One", cursive;
+      font-family: "Share Tech Mono", monospace;
+      margin: 10px 0;
+    }
+    .spanning {
+      font-size: 15px;
+      color: $white_color;
+      margin: 10px 0;
+    }
+  }
+}
+</style>
