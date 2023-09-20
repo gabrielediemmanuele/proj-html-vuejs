@@ -1,7 +1,26 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      counters: [
+        {
+          totalValue: 700 + "+",
+          description: "Project done",
+        },
+        {
+          totalValue: 250 + "+",
+          description: "Happy Clients",
+        },
+        {
+          totalValue: 25 + "+",
+          description: "Team Members",
+        },
+        {
+          totalValue: 12 + "+",
+          description: "Year on the market",
+        },
+      ],
+    };
   },
 };
 </script>
@@ -59,6 +78,30 @@ export default {
     .counters-cont {
       width: 100%;
       border: 1px dashed yellow;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .counter {
+        width: calc(100% / 4);
+        height: 100%;
+        padding: 60px;
+        border: 1px dashed red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        span:first-child {
+          color: $white_color;
+          font-size: 60px;
+          font-family: "Bagel Fat One", cursive;
+          font-family: "Share Tech Mono", monospace;
+          letter-spacing: 3px;
+        }
+        span:last-child {
+          color: $orange_color;
+        }
+      }
     }
   }
 }
