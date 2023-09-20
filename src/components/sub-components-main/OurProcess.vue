@@ -67,8 +67,24 @@ export default {
           <p>{{ card.text }}</p>
         </div>
       </div>
+
+      <div class="arrows-cont">
+        <div class="arrow-bubble">
+          <font-awesome-icon
+            icon="fa-solid fa-arrow-left"
+            size="xl"
+            style="color: #ababab"
+          />
+        </div>
+        <div class="arrow-bubble">
+          <font-awesome-icon
+            icon="fa-solid fa-arrow-right"
+            size="xl"
+            style="color: #ababab"
+          />
+        </div>
+      </div>
     </div>
-    <div class="arrows-cont"></div>
   </div>
 </template>
 
@@ -96,7 +112,6 @@ export default {
   //elements container (text , cards)
   .elements-cont {
     width: 50%;
-    height: 100%;
     border: 2px dashed magenta;
 
     // text container style
@@ -199,5 +214,20 @@ export default {
   }
 
   //arrows container
+  .arrows-cont {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    .arrow-bubble {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border: 1px solid lightgray;
+      margin: 15px;
+      border-radius: 50%;
+    }
+  }
 }
 </style>
