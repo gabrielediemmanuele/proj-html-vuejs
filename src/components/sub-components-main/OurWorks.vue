@@ -30,10 +30,10 @@ export default {
     </div>
     <!--* images cont-->
     <div class="images-cont">
-      <img src="../../assets/work1.png" alt="" />
-      <img src="../../assets/work2.png" alt="" />
-      <img src="../../assets/work3.png" alt="" />
-      <img src="../../assets/work4.png" alt="" />
+      <img src="../../assets/work1.png" alt="art" />
+      <img src="../../assets/work2.png" alt="art" />
+      <img src="../../assets/work3.png" alt="art" />
+      <img src="../../assets/work4.png" alt="art" />
     </div>
     <div class="button-cont">
       <buttonPropMod
@@ -115,9 +115,10 @@ export default {
   border: 1px dashed rgb(140, 180, 41);
 }
 .neutralButton {
-  padding: 8px 20px;
+  padding: 12px 30px;
   border-radius: 20px;
   border: none;
+  font-size: 20px;
 }
 .button-style {
   background-color: $white_color;
