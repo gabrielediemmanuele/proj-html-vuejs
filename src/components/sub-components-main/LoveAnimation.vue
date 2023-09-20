@@ -27,8 +27,8 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Share+Tech+Mono&display=swap");
 @import "../../partials/variables";
 .text-container {
-  width: 80%;
-  margin: 0 auto;
+  width: 50%;
+  margin: 20px auto;
   padding: 20px;
   display: flex;
   flex-direction: column;

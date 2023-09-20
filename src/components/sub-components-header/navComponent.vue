@@ -52,7 +52,7 @@ export default {
 
     li {
       margin: 0 10px 0 10px;
-      color: white;
+      color: $white_color;
       //hover
       &:hover {
         margin: 0 10px 0 10px;
@@ -62,12 +62,12 @@ export default {
   }
 }
 .button {
-  background-color: #ffdfed;
+  background-color: $pink_color;
   &:hover {
     background-color: transparent;
     border: none;
-    box-shadow: 0 0 6px 2px #ffdfed;
-    color: white;
+    box-shadow: 0 0 6px 2px $pink_color;
+    color: $white_color;
   }
 }
 </style>

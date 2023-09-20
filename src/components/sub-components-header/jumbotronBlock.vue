@@ -30,6 +30,7 @@ export default {
 
 <style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Share+Tech+Mono&display=swap");
+@import "../../partials/variables";
 .jumbotron {
   width: 80%;
   margin: 0 auto;
@@ -41,11 +42,11 @@ export default {
   border: 1px dashed orange;
   .slogan {
     font-size: 15px;
-    color: #ff7a1f;
+    color: $orange_color;
     margin: 5px 0;
   }
   .title {
-    color: white;
+    color: $white_color;
     font-size: 50px;
     font-family: "Bagel Fat One", cursive;
     font-family: "Share Tech Mono", monospace;
@@ -53,7 +54,7 @@ export default {
   }
   .spanning {
     font-size: 15px;
-    color: white;
+    color: $white_color;
     margin: 10px 0;
   }
 }
@@ -67,28 +68,28 @@ export default {
 
   //buttons
   .button-start {
-    background-color: #ffdfed;
+    background-color: $pink_color;
     margin: 0 10px;
     //hover
     &:hover {
       background-color: transparent;
       border: none;
-      box-shadow: 0 0 6px 2px #ffdfed;
-      color: white;
+      box-shadow: 0 0 6px 2px $pink_color;
+      color: $white_color;
     }
   }
 
   .button-portfolio {
     background-color: transparent;
     border: none;
-    box-shadow: 0px 0px 3px 1px #ffdfed;
-    color: white;
+    box-shadow: 0px 0px 3px 1px $pink_color;
+    color: $white_color;
     margin: 0 10px;
     //hover
     &:hover {
-      background-color: #ff7a1f;
+      background-color: $orange_color;
       border: none;
-      box-shadow: 0 0 6px 2px #ff7a1f;
+      box-shadow: 0 0 6px 2px $orange_color;
       color: rgb(43, 0, 99);
       margin: 0 10px;
     }
