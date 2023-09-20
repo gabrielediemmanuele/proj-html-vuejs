@@ -4,13 +4,30 @@
 export default {
   data() {
     return {
-      title: "Hello world",
+      cardMembers: [
+        {
+          memberImage: "../../../public/img/team1.png",
+          memberName: "Robert Coleman",
+          memberRole: "Owner & Creative Director",
+        },
+        {
+          memberImage: "../../../public/img/team2.png",
+          memberName: "Don Woods",
+          memberRole: "Administator",
+        },
+        {
+          memberImage: "../../../public/img/team4.png",
+          memberName: "Thomas Nash",
+          memberRole: "2d animator & Compositor",
+        },
+        /* {
+          memberImage: "../../../public/img/profilepers.png",
+          memberName: "Gabriele D.E",
+          memberRole: "Senior Dev. Full Stack",
+        }, */
+      ],
     };
   },
-
-  // components: {
-  //   MyComponent,
-  // },
 };
 </script>
 
@@ -28,46 +45,11 @@ export default {
     <!--* members cards cont cont-->
     <div class="cards-cont">
       <!--!  card cont  -->
-      <div class="card">
-        <img src="../../assets/team1.png" alt="" />
-        <h3>Robert Coleman</h3>
-        <span>Owner & Creative Director</span>
-        <div class="icons-cont">
-          <div class="single-icon">
-            <font-awesome-icon icon="fa-brands fa-facebook" />
-          </div>
-          <div class="single-icon">
-            <font-awesome-icon icon="fa-brands fa-twitter" />
-          </div>
-          <div class="single-icon">
-            <font-awesome-icon icon="fa-brands fa-instagram" />
-          </div>
-        </div>
-        <div class="card-bg"></div>
-      </div>
-      <!--!  card cont  -->
-      <div class="card">
-        <img src="../../assets/team1.png" alt="" />
-        <h3>Robert Coleman</h3>
-        <span>Owner & Creative Director</span>
-        <div class="icons-cont">
-          <div class="single-icon">
-            <font-awesome-icon icon="fa-brands fa-facebook" />
-          </div>
-          <div class="single-icon">
-            <font-awesome-icon icon="fa-brands fa-twitter" />
-          </div>
-          <div class="single-icon">
-            <font-awesome-icon icon="fa-brands fa-instagram" />
-          </div>
-        </div>
-        <div class="card-bg"></div>
-      </div>
-      <!--!  card cont  -->
-      <div class="card">
-        <img src="../../assets/team1.png" alt="" />
-        <h3>Robert Coleman</h3>
-        <span>Owner & Creative Director</span>
+      <div class="card" v-for="member in cardMembers" :key="memberName">
+        <img :src="member.memberImage" :alt="member.memberName" />
+        <h3>{{ member.memberName }}</h3>
+        <span>{{ member.memberRole }}</span>
+        <!--todo Icons  -->
         <div class="icons-cont">
           <div class="single-icon">
             <font-awesome-icon icon="fa-brands fa-facebook" />
@@ -121,6 +103,7 @@ export default {
 .text-container {
   width: 80%;
   margin: 30px auto 0 auto;
+  padding: 15px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
