@@ -1,7 +1,25 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      cards: [
+        {
+          cardImage: "../../../public/img/smart1.png",
+          cardTitle: "3D modeling",
+          text: "We constantly ask questions. It helps us shape your story and deliver the results you crave. Yep. We'll drill deep to deliver above and beyond your expectations",
+        },
+        {
+          cardImage: "../../../public/img/smart2.png",
+          cardTitle: "Collaboration",
+          text: "We constantly ask questions. It helps us shape your story and deliver the results you crave. Yep. We'll drill deep to deliver above and beyond your expectations",
+        },
+        {
+          cardImage: "../../../public/img/smart3.png",
+          cardTitle: "Creativity",
+          text: "We constantly ask questions. It helps us shape your story and deliver the results you crave. Yep. We'll drill deep to deliver above and beyond your expectations",
+        },
+      ],
+    };
   },
   components: {},
 };
@@ -20,7 +38,11 @@ export default {
 
   <!--* CARD CONTAINER-->
   <div class="cards-cont">
-    <div class="card" v-for="card in cards"></div>
+    <div class="card" v-for="card in cards">
+      <img :src="card.cardImage" :alt="card.cardTitle" />
+      <h4>{{ card.cardTitle }}</h4>
+      <p>{{ card.text }}</p>
+    </div>
   </div>
 </template>
 
@@ -59,8 +81,31 @@ export default {
 
 /*cards container style*/
 .cards-cont {
-  width: 80%;
-  height: 320px;
-  border: 1px dashed greenyellow;
+  width: 60%;
+  border: 2px dashed greenyellow;
+  margin: 0px 120px 0px auto;
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+  width: calc(80% / 3);
+  height: 310px;
+  padding: 10px;
+  border: 2px dashed red;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 50px;
+  }
+
+  h3 {
+  }
 }
 </style>
