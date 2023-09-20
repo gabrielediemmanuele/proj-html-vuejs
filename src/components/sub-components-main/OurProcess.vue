@@ -6,25 +6,29 @@ export default {
     return {
       cards: [
         {
-          cardImage: "../../../public/img/process1.png",
+          cardImage: "../../../public/img/process2.png",
           cardTitle: "Pre-Production",
           text: "We'll take your idea and create a technical script which consist of action notes and animation description.",
+          flagg: "1",
         },
         {
-          cardImage: "../../../public/img/process2.png",
+          cardImage: "../../../public/img/process1.png",
           cardTitle: "Scripting",
           text: "We'll take your idea and create a technical script which consist of action notes and animation description.",
+          flagg: "4",
         },
-        {
+        /* {
           cardImage: "../../../public/img/process1.png",
           cardTitle: "Creativity",
           text: "We'll take your idea and create a technical script which consist of action notes and animation description.",
-        },
-        {
+          flagg: '2',
+        }, */
+        /* {
           cardImage: "../../../public/img/process2.png",
           cardTitle: "Story-Telling",
           text: "We'll take your idea and create a technical script which consist of action notes and animation description.",
-        },
+          flagg: '3',
+        }, */
       ],
     };
   },
@@ -37,27 +41,31 @@ export default {
 
 <template>
   <div class="our-process">
-    <!--* text container -->
-    <div class="text-container">
-      <span class="slogan">Our Works</span>
-      <h1 class="title">Featured Productions</h1>
-      <span class="spanning"
-        >Here's just a small sample of some of those projects that we're quite
-        proid of. <br />
-        If you're looking for something specific feel free to get in contact
-        with us.</span
-      >
-    </div>
-    <div class="cards-cont">
-      <div
-        class="card"
-        v-for="(card, index) in cards"
-        :key="index"
-        :style="{ 'background-image': card.bgGradient }"
-      >
-        <img :src="card.cardImage" :alt="card.cardTitle" />
-        <h3>{{ card.cardTitle }}</h3>
-        <p>{{ card.text }}</p>
+    <div class="image-cont"></div>
+    <div class="elements-cont">
+      <!--* text container -->
+      <div class="text-container">
+        <span class="slogan">Our Process</span>
+        <h1 class="title">Our Process for Your Animation Production</h1>
+        <span class="spanning"
+          >We have an effective process for working on animation.</span
+        >
+      </div>
+      <!--* CARD CONTAINER -->
+      <div class="cards-cont">
+        <div
+          class="card"
+          v-for="(card, index) in cards"
+          :key="index"
+          :style="{ 'background-image': card.bgGradient }"
+        >
+          <div class="flagg"></div>
+          <div class="icon-cont">
+            <img :src="card.cardImage" :alt="card.cardTitle" />
+          </div>
+          <h2>{{ card.cardTitle }}</h2>
+          <p>{{ card.text }}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -70,76 +78,103 @@ export default {
 
 //style
 .our-process {
-  width: 100%;
-  border: 2px dashed rgb(0, 255, 153);
-}
-// text container style
-.text-container {
   width: 80%;
-  margin: 30px auto 0 auto;
+  border: 2px dashed rgb(121, 74, 215);
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  border: 1px dashed orange;
-  .slogan {
-    font-size: 15px;
-    color: $azure_color;
-    margin: 5px 0;
+  margin: auto;
+  //image-container
+  .image-cont {
+    width: 50%;
+    height: auto;
+    border: 2px dashed greenyellow;
+    background-image: url(../../src/assets/process-thumb.png);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: 500px;
   }
-  .title {
-    color: $purple_color;
-    font-size: 50px;
-    font-family: "Bagel Fat One", cursive;
-    font-family: "Share Tech Mono", monospace;
-    margin: 10px 0;
-  }
-  .spanning {
-    font-size: 15px;
-    color: $graypurple_color;
-    margin: 10px 0;
-    line-height: 25px;
-  }
-}
+  //elements container (text , cards)
+  .elements-cont {
+    width: 50%;
+    height: 100%;
+    border: 2px dashed magenta;
 
-//cards
-.cards-cont {
-  width: 60%;
-  border: 2px dashed greenyellow;
-  margin: 0px 120px 0px auto;
-  padding: 10px;
+    // text container style
+    .text-container {
+      width: 100%;
+      margin: 30px auto 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: left;
+      border: 1px dashed orange;
+      .slogan {
+        font-size: 15px;
+        color: $azure_color;
+        margin: 5px 0;
+      }
+      .title {
+        color: $purple_color;
+        font-size: 50px;
+        font-family: "Bagel Fat One", cursive;
+        font-family: "Share Tech Mono", monospace;
+        margin: 10px 0;
+      }
+      .spanning {
+        font-size: 15px;
+        color: $graypurple_color;
+        margin: 10px 0;
+        line-height: 25px;
+      }
+    }
 
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-//card style
-.card {
-  width: calc(80% / 3);
-  padding: 15px;
-  border: 2px dashed red;
+    //cards
+    .cards-cont {
+      width: 100%;
+      border: 2px dashed greenyellow;
+      margin: 0px 120px 0px auto;
+      padding: 10px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 20px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    //card style
+    .card {
+      width: calc(100% / 2);
+      padding: 25px 40px;
+      border: 2px dashed red;
 
-  img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 15px;
-  }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 20px;
+      .icon-cont {
+        background-color: #fef5f0;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-bottom: 25px;
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
 
-  h3 {
-    margin-bottom: 15px;
-  }
+      h2 {
+        margin-bottom: 15px;
+      }
 
-  p {
-    font-size: 14px;
-    text-align: center;
-    margin-bottom: 15px;
-    line-height: 25px;
-    font-weight: lighter;
+      p {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 15px;
+        line-height: 25px;
+        font-weight: lighter;
+      }
+    }
   }
 }
 </style>
