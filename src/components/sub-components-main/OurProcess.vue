@@ -41,47 +41,49 @@ export default {
 
 <template>
   <div class="our-process">
-    <div class="image-cont"></div>
-    <div class="elements-cont">
-      <!--* text container -->
-      <div class="text-container">
-        <span class="slogan">Our Process</span>
-        <h1 class="title">Our Process for Your Animation Production</h1>
-        <span class="spanning"
-          >We have an effective process for working on animation.</span
-        >
-      </div>
-      <!--* CARD CONTAINER -->
-      <div class="cards-cont">
-        <div
-          class="card"
-          v-for="(card, index) in cards"
-          :key="index"
-          :style="{ 'background-image': card.bgGradient }"
-        >
-          <div class="flagg">{{ card.flagg }}</div>
-          <div class="icon-cont">
-            <img :src="card.cardImage" :alt="card.cardTitle" />
+    <div class="support-cont">
+      <div class="image-cont"></div>
+      <div class="elements-cont">
+        <!--* text container -->
+        <div class="text-container">
+          <span class="slogan">Our Process</span>
+          <h1 class="title">Our Process for Your Animation Production</h1>
+          <span class="spanning"
+            >We have an effective process for working on animation.</span
+          >
+        </div>
+        <!--* CARD CONTAINER -->
+        <div class="cards-cont">
+          <div
+            class="card"
+            v-for="(card, index) in cards"
+            :key="index"
+            :style="{ 'background-image': card.bgGradient }"
+          >
+            <div class="flagg">{{ card.flagg }}</div>
+            <div class="icon-cont">
+              <img :src="card.cardImage" :alt="card.cardTitle" />
+            </div>
+            <h2>{{ card.cardTitle }}</h2>
+            <p>{{ card.text }}</p>
           </div>
-          <h2>{{ card.cardTitle }}</h2>
-          <p>{{ card.text }}</p>
         </div>
-      </div>
 
-      <div class="arrows-cont">
-        <div class="arrow-bubble">
-          <font-awesome-icon
-            icon="fa-solid fa-arrow-left"
-            size="xl"
-            style="color: #ababab"
-          />
-        </div>
-        <div class="arrow-bubble">
-          <font-awesome-icon
-            icon="fa-solid fa-arrow-right"
-            size="xl"
-            style="color: #ababab"
-          />
+        <div class="arrows-cont">
+          <div class="arrow-bubble">
+            <font-awesome-icon
+              icon="fa-solid fa-arrow-left"
+              size="xl"
+              style="color: #ababab"
+            />
+          </div>
+          <div class="arrow-bubble">
+            <font-awesome-icon
+              icon="fa-solid fa-arrow-right"
+              size="xl"
+              style="color: #ababab"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -95,19 +97,24 @@ export default {
 
 //style
 .our-process {
-  width: 80%;
+  width: 100%;
   border: 2px dashed rgb(121, 74, 215);
-  display: flex;
-  margin: auto;
+
+  background-image: url(../../src/assets/process-thumb.png);
+  background-repeat: no-repeat;
+  background-position: left -100px top 30px;
+  background-size: 50%;
+
+  .support-cont {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+  }
   //image-container
   .image-cont {
     width: 50%;
     height: auto;
     border: 2px dashed greenyellow;
-    background-image: url(../../src/assets/process-thumb.png);
-    background-repeat: no-repeat;
-    background-position: left 0 top 0;
-    background-size: 500px;
   }
   //elements container (text , cards)
   .elements-cont {
