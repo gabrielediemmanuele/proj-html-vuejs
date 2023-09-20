@@ -1,18 +1,14 @@
 <script>
 export default {
   data() {
-    return {
-      title: "Hello world",
-    };
+    return {};
   },
-
-  // components: {
-  //   MyComponent,
-  // },
+  components: {},
 };
 </script>
 
 <template>
+  <!--* TEXT CONTAINER  -->
   <div class="text-container">
     <span class="slogan">Our Love For Animation</span>
     <h1 class="title">We're Storytelling Experts With Creative Smarts</h1>
@@ -21,11 +17,18 @@ export default {
       our Studio. We breathe life into new idea!</span
     >
   </div>
+
+  <!--* CARD CONTAINER-->
+  <div class="cards-cont">
+    <div class="card" v-for="card in cards"></div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Share+Tech+Mono&display=swap");
 @import "../../partials/variables";
+
+/* text container style  */
 .text-container {
   width: 50%;
   margin: 20px auto;
@@ -52,5 +55,12 @@ export default {
     color: $graypurple_color;
     margin: 10px 0;
   }
+}
+
+/*cards container style*/
+.cards-cont {
+  width: 80%;
+  height: 320px;
+  border: 1px dashed greenyellow;
 }
 </style>
