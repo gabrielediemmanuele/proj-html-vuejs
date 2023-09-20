@@ -59,7 +59,7 @@ export default {
           :key="index"
           :style="{ 'background-image': card.bgGradient }"
         >
-          <div class="flagg"></div>
+          <div class="flagg">{{ card.flagg }}</div>
           <div class="icon-cont">
             <img :src="card.cardImage" :alt="card.cardTitle" />
           </div>
@@ -68,6 +68,7 @@ export default {
         </div>
       </div>
     </div>
+    <div class="arrows-cont"></div>
   </div>
 </template>
 
@@ -142,13 +143,33 @@ export default {
     //card style
     .card {
       width: calc(100% / 2);
-      padding: 25px 40px;
-      border: 2px dashed red;
+      padding: 25px 20px;
+      margin: 10px;
 
       display: flex;
       flex-direction: column;
       align-items: center;
       border-radius: 20px;
+      position: relative;
+      box-shadow: 1px 1px 4px 2px gray;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: 1s;
+      }
+      //flagg
+      .flagg {
+        width: 40px;
+        height: 95px;
+        text-align: center;
+        line-height: 140px;
+        border-radius: 0 0 20px 20px;
+        background-color: #ddd1ed;
+        color: #92879f;
+        position: absolute;
+        top: 0;
+        right: 20px;
+      }
       .icon-cont {
         background-color: #fef5f0;
         padding: 30px;
@@ -176,5 +197,7 @@ export default {
       }
     }
   }
+
+  //arrows container
 }
 </style>
