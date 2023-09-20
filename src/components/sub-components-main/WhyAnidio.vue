@@ -3,12 +3,12 @@ export default {
   data() {
     return {
       partnersLogos: [
-        "../../assets/sponsor1.png",
-        "../../assets/sponsor2.png",
-        "../../assets/sponsor3.png",
-        "../../assets/sponsor4.png",
-        "../../assets/sponsor5.png",
-        "../../assets/sponsor6.png",
+        "../../../public/img/sponsor1.png",
+        "../../../public/img/sponsor2.png",
+        "../../../public/img/sponsor3.png",
+        "../../../public/img/sponsor4.png",
+        "../../../public/img/sponsor5.png",
+        "../../../public/img/sponsor6.png",
       ],
     };
   },
@@ -32,9 +32,8 @@ export default {
     </div>
     <!--* partners logo container -->
     <div class="partners-cards">
-      <div class="card" v-for="(partner, index) in partnersLogos" :key="index">
-        <img src="../../../public/img/" alt="" />
-        <img :src="partner.partnersLogos" alt="logos" />
+      <div class="card" v-for="logo in partnersLogos">
+        <img :src="logo" alt="logos" />
       </div>
     </div>
   </div>
@@ -82,7 +81,7 @@ export default {
 //partners
 .partners-cards {
   width: 80%;
-  margin: 0 auto;
+  margin: 20px auto;
   border: 1px dashed yellow;
   display: flex;
   align-items: center;
@@ -91,8 +90,20 @@ export default {
   .card {
     width: calc(100% / 6);
     height: 100%;
-    padding: 10px;
+    padding: 5px;
     border: 1px dashed red;
+    margin: 5px;
+
+    img {
+      width: 100%;
+      box-shadow: 0px 0px 3px 0px gray;
+      border-radius: 10px;
+    }
+    img:hover {
+      transform: scale(1.1);
+      transition: 500ms;
+      margin: 5px;
+    }
   }
 }
 </style>
