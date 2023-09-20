@@ -24,8 +24,8 @@ export default {
   margin: 0 auto;
   background-image: url(../../src/assets/smarttwo.png);
   background-repeat: no-repeat;
-  background-position: left -330px top -112px;
-  background-size: 900px;
+  background-position: left -340px top -160px;
+  background-size: 1000px;
   border: 2px dashed red;
 }
 </style>

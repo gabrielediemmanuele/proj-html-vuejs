@@ -101,7 +101,7 @@ export default {
   justify-content: space-evenly;
   align-items: center;
 }
-
+//card style
 .card {
   width: calc(80% / 3);
   padding: 15px;
