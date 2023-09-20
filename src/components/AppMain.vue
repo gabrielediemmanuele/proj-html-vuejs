@@ -1,7 +1,9 @@
 <script>
+//import
 import LoveAnimation from "../components/sub-components-main/LoveAnimation.vue";
 import AnidioQuick from "../components/sub-components-main/AnidioQuick.vue";
-
+import OurWorks from "../components/sub-components-main/OurWorks.vue";
+//export
 export default {
   data() {
     return {};
@@ -10,6 +12,7 @@ export default {
   components: {
     LoveAnimation,
     AnidioQuick,
+    OurWorks,
   },
 };
 </script>
@@ -18,6 +21,7 @@ export default {
   <main class="main-container">
     <LoveAnimation></LoveAnimation>
     <AnidioQuick></AnidioQuick>
+    <OurWorks></OurWorks>
   </main>
 </template>
 
