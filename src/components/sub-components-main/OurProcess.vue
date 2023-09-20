@@ -100,10 +100,11 @@ export default {
   width: 100%;
   border: 2px dashed rgb(121, 74, 215);
 
-  background-image: url(../../src/assets/process-thumb.png);
-  background-repeat: no-repeat;
-  background-position: left -100px top 30px;
-  background-size: 50%;
+  background-image: url(../../src/assets/process-thumb.png),
+    url(../../assets/smart4.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left -100px top 30px, right 5px bottom 10px;
+  background-size: 50%, 10%;
 
   .support-cont {
     width: 80%;

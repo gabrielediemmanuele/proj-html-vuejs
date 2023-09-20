@@ -65,10 +65,11 @@ export default {
 @import "../../partials/variables";
 //bg-image
 .love-animation {
-  background-image: url(../../src/assets/smarttwo.png);
-  background-repeat: no-repeat;
-  background-position: left -340px top -160px;
-  background-size: 1000px;
+  background-image: url(../../src/assets/smarttwo.png),
+    url(../../assets/smart4.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left -340px top -160px, right 5px bottom 10px;
+  background-size: 1000px, 10%;
 }
 /* text container style  */
 .text-container {
