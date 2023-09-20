@@ -28,7 +28,12 @@ export default {
       >
     </div>
     <!--* images cont-->
-    <div class="images-cont"></div>
+    <div class="images-cont">
+      <img src="../../assets/work1.png" alt="" />
+      <img src="../../assets/work2.png" alt="" />
+      <img src="../../assets/work3.png" alt="" />
+      <img src="../../assets/work4.png" alt="" />
+    </div>
     <div class="button-cont"></div>
   </div>
 </template>
@@ -46,8 +51,7 @@ export default {
 // text container css
 .text-container {
   width: 80%;
-  margin: 30px auto;
-  padding: 20px;
+  margin: 30px auto 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -74,4 +78,26 @@ export default {
 }
 
 //images css
+.images-cont {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px dashed rgb(0, 174, 255);
+  display: flex;
+  flex-wrap: wrap;
+
+  img {
+    width: calc(100% / 2 - 40px);
+    margin: 10px;
+    box-shadow: 1px 1px 4px 1px rgb(82, 82, 82);
+    border-radius: 20px;
+  }
+  img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    margin: 15px;
+  }
+}
+
+//button
 </style>
