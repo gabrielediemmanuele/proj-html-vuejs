@@ -7,19 +7,25 @@ export default {
 </script>
 
 <template>
+  <!--* Background container  -->
   <div class="create-worlds">
+    <!--*  contents  -->
     <div class="contents-cont">
-      <div class="jumbotron">
-        <span class="slogan">Imagine, Create, Experience</span>
-        <h1 class="title">
-          We Animate <br />
-          Whit Ninja-Like Precision
-        </h1>
-        <span class="spanning"
-          >We are a character-driven animation studio striving to make
-          high-quality animations.</span
-        >
-      </div>
+      <span class="slogan">Imagine, Create, Experience</span>
+      <h1 class="title">
+        We Animate <br />
+        Whit Ninja-Like Precision
+      </h1>
+      <span class="spanning"
+        >We are a character-driven animation studio striving to make
+        high-quality animations.</span
+      >
+    </div>
+    <div class="submit-cont">
+      <form action="">
+        <input type="text" name="" id="" placeholder="bellali" />
+        <button type="button">ciao</button>
+      </form>
     </div>
   </div>
 </template>
@@ -42,12 +48,13 @@ export default {
   background-size: auto, auto, cover;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
   //contents-container
   .contents-cont {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     padding: 20px;
     display: flex;
@@ -72,6 +79,10 @@ export default {
       color: $white_color;
       margin: 10px 0;
     }
+  }
+
+  //submit customs
+  .submit-cont {
   }
 }
 </style>
