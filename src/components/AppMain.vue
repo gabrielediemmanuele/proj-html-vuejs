@@ -1,5 +1,6 @@
 <script>
 import LoveAnimation from "../components/sub-components-main/LoveAnimation.vue";
+import AnidioQuick from "../components/sub-components-main/AnidioQuick.vue";
 
 export default {
   data() {
@@ -8,6 +9,7 @@ export default {
 
   components: {
     LoveAnimation,
+    AnidioQuick,
   },
 };
 </script>
@@ -15,6 +17,7 @@ export default {
 <template>
   <main class="main-container">
     <LoveAnimation></LoveAnimation>
+    <AnidioQuick></AnidioQuick>
   </main>
 </template>
 
@@ -22,6 +25,6 @@ export default {
 .main-container {
   width: 100%;
   margin: 0 auto;
-  border: 3px dashed red;
+  border: 3px dashed rgb(119, 0, 255);
 }
 </style>

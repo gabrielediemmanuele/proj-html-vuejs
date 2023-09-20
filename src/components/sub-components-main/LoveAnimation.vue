@@ -2,6 +2,7 @@
 export default {
   data() {
     return {
+      //Smarth Cicle to generate cards -> look at .48
       cards: [
         {
           cardImage: "../../../public/img/smart1.png",
@@ -62,7 +63,7 @@ export default {
 <style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Share+Tech+Mono&display=swap");
 @import "../../partials/variables";
-
+//bg-image
 .love-animation {
   background-image: url(../../src/assets/smarttwo.png);
   background-repeat: no-repeat;
