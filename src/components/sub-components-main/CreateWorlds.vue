@@ -38,7 +38,7 @@ export default {
 //main container
 .create-worlds {
   width: 100%;
-  height: 400px;
+  height: 500px;
   border: 2px solid yellow;
   //background elements settings
   background-image: url(../../assets/shape-bottom.png),
@@ -54,7 +54,7 @@ export default {
 
   //contents-container
   .contents-cont {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     padding: 20px;
     display: flex;
@@ -83,6 +83,25 @@ export default {
 
   //submit customs
   .submit-cont {
+    form {
+      display: flex;
+      border: none;
+      padding: 1px;
+      width: 700px;
+    }
+
+    input {
+      flex-grow: 2;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+    }
+
+    button {
+      border: 1px solid blue;
+      background: blue;
+      color: white;
+    }
   }
 }
 </style>
