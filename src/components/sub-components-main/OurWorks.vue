@@ -1,16 +1,17 @@
 <script>
-// import MyComponent from "./components/MyComponent.vue";
+import buttonPropMod from "../micro-components/buttonPropMod.vue";
 
 export default {
   data() {
     return {
-      title: "Hello world",
+      text: "See Our Work",
+      buttonStyle: "button-style",
     };
   },
 
-  // components: {
-  //   MyComponent,
-  // },
+  components: {
+    buttonPropMod,
+  },
 };
 </script>
 
@@ -34,7 +35,12 @@ export default {
       <img src="../../assets/work3.png" alt="" />
       <img src="../../assets/work4.png" alt="" />
     </div>
-    <div class="button-cont"></div>
+    <div class="button-cont">
+      <buttonPropMod
+        :neutralButton="buttonStyle"
+        :btText="text"
+      ></buttonPropMod>
+    </div>
   </div>
 </template>
 
@@ -100,4 +106,31 @@ export default {
 }
 
 //button
+.button-cont {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed rgb(140, 180, 41);
+}
+.neutralButton {
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: none;
+}
+.button-style {
+  background-color: $white_color;
+  margin: 0 10px;
+  box-shadow: 0 0 6px 2px $graypurple_color;
+  color: $graypurple_color;
+  //hover
+  &:hover {
+    background-color: $white_color;
+    border: none;
+    box-shadow: 0 0 6px 2px $purple_color;
+    color: $purple_color;
+  }
+}
 </style>
