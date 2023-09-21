@@ -183,6 +183,12 @@ export default {
         display: flex;
         align-items: center;
         justify-content: center;
+
+        &:hover {
+          color: $white_color;
+          background-color: $orange_color;
+          border: none;
+        }
       }
     }
   }

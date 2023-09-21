@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faPlay as faPlaySolid } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight as faArrowRightSolid } from "@fortawesome/free-solid-svg-icons";
 import { faArrowLeft as faArrowLeftSolid } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUp as faArrowUpSolid } from "@fortawesome/free-solid-svg-icons";
 
 //SOCIALS
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
@@ -19,6 +20,7 @@ library.add(
   faPlaySolid,
   faArrowRightSolid,
   faArrowLeftSolid,
+  faArrowUpSolid,
   faFacebook,
   faTwitter,
   faInstagram

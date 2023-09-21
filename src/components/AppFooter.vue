@@ -26,6 +26,7 @@ export default {
           <li v-for="elementList in navList">{{ elementList }}</li>
         </ul>
       </div>
+
       <!--* Copyright and Socials Icons -->
       <div class="bottom-cont">
         <span
@@ -44,6 +45,9 @@ export default {
           </div>
         </div>
       </div>
+      <div class="arrow-up">
+        <font-awesome-icon icon="fa-solid fa-arrow-up" />
+      </div>
     </div>
   </footer>
 </template>
@@ -54,6 +58,31 @@ export default {
 .footer-cont {
   width: 100%;
   padding-top: 40px;
+  position: relative;
+
+  //ArrowUp
+  .arrow-up {
+    width: 25px;
+    height: 25px;
+    padding: 15px 55px 15px 10px;
+    color: white;
+    background-color: $purple_color;
+    border-radius: 10px 0 0 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+
+    &:hover {
+      background-color: $orange-color;
+      color: $white_color;
+      cursor: pointer;
+    }
+  }
 }
 //NAV CONTAINER CONTENTS
 .nav-cont {
@@ -63,6 +92,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid lightgray;
   ul {
     list-style-type: none;
     display: flex;
@@ -76,8 +106,8 @@ export default {
       font-size: 12px;
       //hover
       &:hover {
-        margin: 0 10px 0 10px;
         color: $orange_color;
+        cursor: pointer;
       }
     }
   }
@@ -111,17 +141,23 @@ export default {
       display: flex;
       align-items: center;
       justify-content: center;
+
+      &:hover {
+        color: $white_color;
+        background-color: $orange_color;
+        border: none;
+      }
     }
   }
+}
 
-  //span
-  span {
-    font-size: 12px;
-    font-weight: 500;
+//span
+span {
+  font-size: 12px;
+  font-weight: 500;
 
-    a {
-      text-decoration: none;
-    }
+  a {
+    text-decoration: none;
   }
 }
 </style>
