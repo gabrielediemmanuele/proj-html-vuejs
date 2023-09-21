@@ -80,6 +80,7 @@ export default {
       border: none;
       box-shadow: 0 0 6px 2px $pink_color;
       color: $white_color;
+      cursor: pointer;
     }
   }
 
@@ -96,6 +97,7 @@ export default {
       box-shadow: 0 0 6px 2px $orange_color;
       color: rgb(43, 0, 99);
       margin: 0 10px;
+      cursor: pointer;
     }
   }
 }

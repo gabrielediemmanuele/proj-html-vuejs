@@ -98,6 +98,7 @@ export default {
     transform: scale(1.1);
     transition: 1s;
     margin: 15px;
+    cursor: pointer;
   }
 }
 
@@ -127,6 +128,7 @@ export default {
     border: none;
     box-shadow: 0 0 6px 2px $purple_color;
     color: $purple_color;
+    cursor: pointer;
   }
 }
 </style>

@@ -58,6 +58,7 @@ export default {
       &:hover {
         margin: 0 10px 0 10px;
         color: $orange_color;
+        cursor: pointer;
       }
     }
   }
@@ -71,6 +72,7 @@ export default {
     border: none;
     box-shadow: 0 0 6px 2px $pink_color;
     color: $white_color;
+    cursor: pointer;
   }
 }
 </style>

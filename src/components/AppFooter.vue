@@ -84,12 +84,14 @@ export default {
     position: absolute;
     right: -35px;
     bottom: 40px;
+    cursor: pointer;
 
     //btn
     .btn {
       color: $white_color;
       background-color: transparent;
       border: none;
+      cursor: pointer;
     }
 
     &:hover {
@@ -162,6 +164,7 @@ export default {
         color: $white_color;
         background-color: $orange_color;
         border: none;
+        cursor: pointer;
       }
     }
   }

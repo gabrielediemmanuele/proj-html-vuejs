@@ -93,6 +93,7 @@ export default {
       transform: scale(1.1);
       transition: 500ms;
       margin: 5px;
+      cursor: pointer;
     }
   }
 }

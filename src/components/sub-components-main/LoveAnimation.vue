@@ -123,6 +123,7 @@ export default {
     box-shadow: 0px 0px 6px 1px gray;
     transform: scale(1.1);
     transition: 1s;
+    cursor: pointer;
   }
 
   img {

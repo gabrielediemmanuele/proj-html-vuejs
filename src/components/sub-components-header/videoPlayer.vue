@@ -43,6 +43,7 @@ export default {
     //hover
     &:hover {
       background-color: rgb(255, 255, 255);
+      cursor: pointer;
 
       .play-icon {
         color: purple;

@@ -166,6 +166,7 @@ export default {
       &:hover {
         transform: scale(1.1);
         transition: 1s;
+        cursor: pointer;
       }
       //flagg
       .flagg {
@@ -228,6 +229,7 @@ export default {
         border: none;
         color: white;
         background-color: $orange_color;
+        cursor: pointer;
       }
     }
   }

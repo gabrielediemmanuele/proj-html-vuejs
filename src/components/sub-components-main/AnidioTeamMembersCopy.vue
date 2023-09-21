@@ -50,25 +50,25 @@ export default {
       console.log(index);
     },
 
-    /* autoPlay() {
+    autoPlay() {
       if (!this.autoplay) {
         this.autoplay = setInterval(() => {
           this.goNext();
-        }, 3000);
+        }, 5000);
       }
-    }, */
+    },
 
-    /* autoStop() {
+    autoStop() {
       if (this.autoplay) {
         clearInterval(this.autoplay);
-        this.autoplay = true;
+        this.autoplay = false;
       }
-    }, */
+    },
   },
 
-  /* created() {
+  created() {
     this.autoPlay();
-  }, */
+  },
 };
 </script>
 
@@ -84,7 +84,12 @@ export default {
       >
     </div>
     <!--* members cards cont cont-->
-    <div class="cards-cont">
+    <div
+      class="cards-cont"
+      @mouseOver="autoStop()"
+      @mouseLeave="autoPlay()"
+      tabindex="0"
+    >
       <!--!  card cont  -->
       <div
         class="card"
@@ -116,6 +121,7 @@ export default {
       <div class="arrow-bubble" @click="goPrev()">
         <font-awesome-icon icon="fa-solid fa-arrow-left" size="xl" />
       </div>
+      <!--* dots system color-->
       <span
         class="slider-dot"
         v-for="(dot, index) in cardMembers.length"
@@ -172,7 +178,7 @@ export default {
 .active {
   transform: scale(1.1);
   box-shadow: 0px 0px 6px 2px gray;
-  transition: 1s;
+  transition: 2s;
 }
 //cards
 .cards-cont {
@@ -194,6 +200,7 @@ export default {
     align-items: center;
     border-radius: 20px;
     position: relative;
+    cursor: pointer;
 
     //card > background
     .card-bg {
@@ -270,6 +277,7 @@ export default {
     background-color: rgb(184, 184, 184);
     border-radius: 50%;
     margin: 0 10px;
+    cursor: pointer;
   }
 
   .arrow-bubble {
@@ -285,6 +293,7 @@ export default {
       border: none;
       color: white;
       background-color: $orange_color;
+      cursor: pointer;
     }
   }
 }
