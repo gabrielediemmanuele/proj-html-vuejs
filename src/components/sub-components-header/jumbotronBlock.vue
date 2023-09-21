@@ -1,5 +1,6 @@
 <script>
 import buttonModel from "../micro-components/buttonModel.vue";
+
 export default {
   data() {
     return {};
@@ -11,6 +12,7 @@ export default {
 </script>
 
 <template>
+  <!--* Jumbotron -->
   <div class="jumbotron">
     <span class="slogan">Imagine, Create, Experience</span>
     <h1 class="title">
@@ -22,6 +24,7 @@ export default {
       animations.</span
     >
   </div>
+  <!--* button -->
   <div class="button-cont">
     <jumboButton class="button-start">Start a Project</jumboButton>
     <jumboButton class="button-portfolio">Portfolio</jumboButton>
@@ -31,6 +34,8 @@ export default {
 <style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Share+Tech+Mono&display=swap");
 @import "../../partials/variables";
+
+//Jumbotron
 .jumbotron {
   width: 80%;
   margin: 0 auto;
@@ -39,7 +44,6 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  border: 1px dashed orange;
   .slogan {
     font-size: 15px;
     color: $orange_color;
@@ -58,13 +62,13 @@ export default {
     margin: 10px 0;
   }
 }
+//Button
 .button-cont {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
   display: flex;
   justify-content: center;
-  border: 1px dashed rgb(140, 180, 41);
 
   //buttons
   .button-start {

@@ -12,10 +12,6 @@ export default {
       ],
     };
   },
-
-  // components: {
-  //   MyComponent,
-  // },
 };
 </script>
 
@@ -45,9 +41,7 @@ export default {
 @import "../../partials/variables";
 .partners-cont {
   width: 100%;
-  border: 2px dashed rgb(0, 255, 153);
 }
-
 // text container css
 .text-container {
   width: 80%;
@@ -57,7 +51,6 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  border: 1px dashed orange;
   .slogan {
     font-size: 15px;
     color: $azure_color;
@@ -77,12 +70,10 @@ export default {
     line-height: 25px;
   }
 }
-
 //partners
 .partners-cards {
   width: 80%;
   margin: 20px auto;
-  border: 1px dashed yellow;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -91,7 +82,6 @@ export default {
     width: calc(100% / 6);
     height: 100%;
     padding: 5px;
-    border: 1px dashed red;
     margin: 5px;
 
     img {

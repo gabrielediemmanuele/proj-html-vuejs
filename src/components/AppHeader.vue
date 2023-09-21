@@ -9,6 +9,7 @@ export default {
   data() {
     return {};
   },
+  //components
   components: {
     navComponent,
     jumboCont: jumbotronBlock,
@@ -33,7 +34,6 @@ export default {
 header {
   width: 100%;
   height: 1000px;
-  border: 1px dashed green;
   background-image: url(../../src/assets/Banner-bg-def.png);
   background-position: top;
   background-repeat: no-repeat;

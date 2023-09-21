@@ -80,7 +80,6 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  border: 1px dashed orange;
   .slogan {
     font-size: 15px;
     color: $azure_color;
@@ -103,7 +102,6 @@ export default {
 /*cards container style*/
 .cards-cont {
   width: 60%;
-  border: 2px dashed greenyellow;
   margin: 0px 120px 0px auto;
   padding: 10px;
 
@@ -115,7 +113,6 @@ export default {
 .card {
   width: calc(80% / 3);
   padding: 15px;
-  border: 2px dashed red;
 
   display: flex;
   flex-direction: column;

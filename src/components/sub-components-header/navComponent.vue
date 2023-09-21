@@ -35,6 +35,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../partials/variables";
+
 //navigation menu
 .nav-cont {
   width: 80%;
@@ -43,7 +44,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px dashed orange;
   ul {
     list-style-type: none;
     display: flex;

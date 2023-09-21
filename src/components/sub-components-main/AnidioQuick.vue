@@ -28,7 +28,9 @@ export default {
 <template>
   <div class="anidio-quick">
     <div class="facts-cont">
+      <!--* Title Container-->
       <div class="title-cont"><h1>Anidio Quick Facts</h1></div>
+      <!--* Counter system Cont-->
       <div class="counters-cont">
         <div class="counter" v-for="counter in counters">
           <span>{{ counter.totalValue }}</span>
@@ -46,7 +48,7 @@ export default {
 
 .anidio-quick {
   width: 100%;
-  border: 2px solid yellow;
+  margin-top: 20px;
   //background elements settings
   background-image: url(../../assets/shape-bottom.png),
     url(../../assets/shape-top.png), url(../../assets/globe.png),
@@ -62,21 +64,20 @@ export default {
   //facts cont
   .facts-cont {
     width: 80%;
-    border: 2px dashed lime;
     margin: 20px 0;
 
+    //Title
     .title-cont h1 {
       font-family: "Bagel Fat One", cursive;
       font-family: "Share Tech Mono", monospace;
       color: $white_color;
-      border: 1px dashed orange;
       text-align: center;
       padding: 20px 0;
       font-size: 40px;
     }
+    //Counter
     .counters-cont {
       width: 100%;
-      border: 1px dashed yellow;
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -85,7 +86,6 @@ export default {
         width: calc(100% / 4);
         height: 100%;
         padding: 60px;
-        border: 1px dashed red;
         display: flex;
         flex-direction: column;
         align-items: center;

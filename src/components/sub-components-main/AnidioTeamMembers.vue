@@ -65,22 +65,14 @@ export default {
     <!--* slider arrows-->
     <div class="arrows-cont">
       <div class="arrow-bubble">
-        <font-awesome-icon
-          icon="fa-solid fa-arrow-left"
-          size="xl"
-          style="color: #ababab"
-        />
+        <font-awesome-icon icon="fa-solid fa-arrow-left" size="xl" />
       </div>
       <span class="slider-dot"></span>
       <span class="slider-dot"></span>
       <span class="slider-dot"></span>
       <span class="slider-dot"></span>
       <div class="arrow-bubble">
-        <font-awesome-icon
-          icon="fa-solid fa-arrow-right"
-          size="xl"
-          style="color: #ababab"
-        />
+        <font-awesome-icon icon="fa-solid fa-arrow-right" size="xl" />
       </div>
     </div>
   </div>
@@ -91,7 +83,6 @@ export default {
 @import "../../partials/variables";
 .team-members {
   width: 100%;
-  border: 2px dashed rgb(0, 255, 153);
   background-image: url(../../assets/shape.png), url(../../assets/shape2.png);
   background-repeat: no-repeat, no-repeat;
   background-size: 50%, 50%;
@@ -106,7 +97,6 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  border: 1px dashed orange;
   .slogan {
     font-size: 15px;
     color: $azure_color;
@@ -131,7 +121,7 @@ export default {
 .cards-cont {
   width: 80%;
   padding: 30px 0;
-  border: 2px dashed skyblue;
+
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -145,7 +135,7 @@ export default {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 2px dashed black;
+
     position: relative;
 
     //card > background
@@ -206,7 +196,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px dashed rgb(255, 119, 0);
   padding: 20px;
 
   .slider-dot {
@@ -224,6 +213,13 @@ export default {
     border: 1px solid lightgray;
     margin: 15px;
     border-radius: 50%;
+    color: #ababab;
+
+    &:hover {
+      border: none;
+      color: white;
+      background-color: $orange_color;
+    }
   }
 }
 </style>

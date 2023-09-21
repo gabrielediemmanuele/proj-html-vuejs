@@ -51,7 +51,6 @@ export default {
 //general css
 .our-works {
   width: 100%;
-  border: 2px dashed rgb(0, 255, 153);
 }
 // text container css
 .text-container {
@@ -61,7 +60,6 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  border: 1px dashed orange;
   .slogan {
     font-size: 15px;
     color: $azure_color;
@@ -87,7 +85,6 @@ export default {
   width: 80%;
   margin: 0 auto;
   padding: 10px;
-  border: 1px dashed rgb(0, 174, 255);
   display: flex;
   flex-wrap: wrap;
 
@@ -112,7 +109,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px dashed rgb(140, 180, 41);
 }
 .neutralButton {
   padding: 12px 30px;

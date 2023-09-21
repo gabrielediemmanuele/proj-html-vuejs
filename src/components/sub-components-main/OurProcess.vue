@@ -68,21 +68,13 @@ export default {
             <p>{{ card.text }}</p>
           </div>
         </div>
-
+        <!--* Arrows -->
         <div class="arrows-cont">
           <div class="arrow-bubble">
-            <font-awesome-icon
-              icon="fa-solid fa-arrow-left"
-              size="xl"
-              style="color: #ababab"
-            />
+            <font-awesome-icon icon="fa-solid fa-arrow-left" size="xl" />
           </div>
           <div class="arrow-bubble">
-            <font-awesome-icon
-              icon="fa-solid fa-arrow-right"
-              size="xl"
-              style="color: #ababab"
-            />
+            <font-awesome-icon icon="fa-solid fa-arrow-right" size="xl" />
           </div>
         </div>
       </div>
@@ -98,8 +90,6 @@ export default {
 //style
 .our-process {
   width: 100%;
-  border: 2px dashed rgb(121, 74, 215);
-
   background-image: url(../../src/assets/process-thumb.png),
     url(../../assets/smart4.png);
   background-repeat: no-repeat, no-repeat;
@@ -115,12 +105,10 @@ export default {
   .image-cont {
     width: 50%;
     height: auto;
-    border: 2px dashed greenyellow;
   }
   //elements container (text , cards)
   .elements-cont {
     width: 50%;
-    border: 2px dashed magenta;
 
     // text container style
     .text-container {
@@ -131,7 +119,6 @@ export default {
       flex-direction: column;
       justify-content: space-between;
       text-align: left;
-      border: 1px dashed orange;
       .slogan {
         font-size: 15px;
         color: $azure_color;
@@ -155,7 +142,7 @@ export default {
     //cards
     .cards-cont {
       width: 100%;
-      border: 2px dashed greenyellow;
+
       margin: 0px 120px 0px auto;
       padding: 10px;
 
@@ -235,6 +222,13 @@ export default {
       border: 1px solid lightgray;
       margin: 15px;
       border-radius: 50%;
+      color: #ababab;
+
+      &:hover {
+        border: none;
+        color: white;
+        background-color: $orange_color;
+      }
     }
   }
 }

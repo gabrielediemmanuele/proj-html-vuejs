@@ -28,19 +28,19 @@ export default {
 
 <template>
   <main class="main-container">
-    <!--! Agency Skills and features  -->
+    <!--* Agency Skills and features  -->
     <LoveAnimation></LoveAnimation>
-    <!--! Agency Scores  -->
+    <!--* Agency Scores  -->
     <AnidioQuick></AnidioQuick>
-    <!--! Agency Work Gallery -->
+    <!--* Agency Work Gallery -->
     <OurWorks></OurWorks>
-    <!--! Agency Process  -->
+    <!--* Agency Process  -->
     <OurProcess></OurProcess>
-    <!--! Agency Team Members  -->
+    <!--* Agency Team Members  -->
     <AnidioTeamMembers></AnidioTeamMembers>
-    <!--! Agency - Partners  -->
+    <!--* Agency - Partners  -->
     <WhyAnidio></WhyAnidio>
-    <!--! Agency Submit Section  -->
+    <!--* Agency Submit Section  -->
     <CreateWorlds></CreateWorlds>
   </main>
 </template>
@@ -49,6 +49,5 @@ export default {
 .main-container {
   width: 100%;
   margin: 0 auto;
-  border: 3px dashed rgb(119, 0, 255);
 }
 </style>

@@ -30,8 +30,8 @@ export default {
 <style lang="scss">
 .global-container {
   width: 100%;
-  border: 2px dashed red;
 }
+//global css
 * {
   margin: 0;
   padding: 0;

@@ -7,6 +7,7 @@ export default {
 </script>
 
 <template>
+  <!--* Video Player  -->
   <div class="player-cont">
     <div class="play-cont">
       <font-awesome-icon class="play-icon" icon="fa-solid fa-play" />
@@ -23,7 +24,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px dashed rgb(242, 222, 184);
   position: relative;
   .play-cont {
     width: 60px;

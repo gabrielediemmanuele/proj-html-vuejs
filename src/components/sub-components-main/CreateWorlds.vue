@@ -40,7 +40,6 @@ export default {
 .create-worlds {
   width: 100%;
   height: 500px;
-  border: 2px solid yellow;
   //background elements settings
   background-image: url(../../assets/shape-bottom.png),
     url(../../assets/shape-top.png), url(../../assets/preloader.png);
@@ -62,7 +61,6 @@ export default {
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    border: 1px dashed orange;
     .slogan {
       font-size: 18px;
       color: $orange_color;

@@ -13,10 +13,6 @@ export default {
       ],
     };
   },
-
-  // components: {
-  //   MyComponent,
-  // },
 };
 </script>
 
@@ -57,7 +53,6 @@ export default {
 
 .footer-cont {
   width: 100%;
-  border: 2px dashed lime;
   padding-top: 40px;
 }
 //NAV CONTAINER CONTENTS
@@ -68,7 +63,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px dashed orange;
   ul {
     list-style-type: none;
     display: flex;
@@ -97,7 +91,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px dashed orange;
   //social icons
   .icons-cont {
     display: flex;
