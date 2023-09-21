@@ -24,12 +24,11 @@ export default {
     <!--*submit container-->
     <div class="submit-cont">
       <input
-        type="text"
-        name=""
-        id=""
+        type="email"
         placeholder="Enter here your E-mail..."
         v-model="emailText"
         v-on:keyup.enter="$emit('submit', emailText)"
+        required
       />
       <button type="button" @click="$emit('submit', emailText)">Submit</button>
     </div>

@@ -13,7 +13,6 @@ import CreateWorlds from "../components/sub-components-main/CreateWorlds.vue";
 export default {
   data() {
     return {
-      emailText: "",
       emailList: [],
     };
   },
@@ -31,13 +30,15 @@ export default {
 
   //methods
   methods: {
-    getEmail() {
-      let newEmail = this.emailText;
+    getEmail(emailText) {
+      let newEmail = emailText;
       this.emailList.push(newEmail);
-      console.log(this.emailText);
+      console.log(newEmail);
       console.log(this.emailList);
     },
   },
+
+  created() {},
 };
 </script>
 
