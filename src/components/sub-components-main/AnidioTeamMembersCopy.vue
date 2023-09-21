@@ -203,6 +203,7 @@ export default {
       border-radius: 20px;
     }
     img {
+      width: 100%;
       margin-bottom: 20px;
       z-index: 1;
     }

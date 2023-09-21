@@ -4,7 +4,7 @@ import LoveAnimation from "../components/sub-components-main/LoveAnimation.vue";
 import AnidioQuick from "../components/sub-components-main/AnidioQuick.vue";
 import OurWorks from "../components/sub-components-main/OurWorks.vue";
 import OurProcess from "../components/sub-components-main/OurProcess.vue";
-import AnidioTeamMembers from "../components/sub-components-main/AnidioTeamMembers.vue";
+/* import AnidioTeamMembers from "../components/sub-components-main/AnidioTeamMembers.vue"; */
 import AnidioTeamMembersCopy from "../components/sub-components-main/AnidioTeamMembersCopy.vue";
 import WhyAnidio from "../components/sub-components-main/WhyAnidio.vue";
 import CreateWorlds from "../components/sub-components-main/CreateWorlds.vue";
@@ -12,18 +12,31 @@ import CreateWorlds from "../components/sub-components-main/CreateWorlds.vue";
 //export
 export default {
   data() {
-    return {};
+    return {
+      emailText: "",
+      emailList: [],
+    };
   },
-
+  //components
   components: {
     LoveAnimation,
     AnidioQuick,
     OurWorks,
     OurProcess,
-    AnidioTeamMembers,
+    /*  AnidioTeamMembers, */
     AnidioTeamMembersCopy,
     WhyAnidio,
     CreateWorlds,
+  },
+
+  //methods
+  methods: {
+    getEmail() {
+      let newEmail = this.emailText;
+      newEmail.push(emailList);
+      console.log(this.emailText);
+      console.log(this.emailList);
+    },
   },
 };
 </script>
@@ -39,13 +52,13 @@ export default {
     <!--* Agency Process  -->
     <OurProcess></OurProcess>
     <!--* Agency Team Members  -->
-    <AnidioTeamMembers></AnidioTeamMembers>
+    <!--? <AnidioTeamMembers></AnidioTeamMembers> -->
     <!--! copia di prova per lo slider -->
     <AnidioTeamMembersCopy></AnidioTeamMembersCopy>
     <!--* Agency - Partners  -->
     <WhyAnidio></WhyAnidio>
     <!--* Agency Submit Section  -->
-    <CreateWorlds></CreateWorlds>
+    <CreateWorlds @submit="getEmail"></CreateWorlds>
   </main>
 </template>
 

@@ -1,8 +1,11 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      emailText: "",
+    };
   },
+  emits: ["submit"],
 };
 </script>
 
@@ -25,9 +28,10 @@ export default {
         name=""
         id=""
         placeholder="Enter here your E-mail..."
-        v-model="Text"
+        v-model="emailText"
+        v-on:keyup.enter="$emit('submit', emailText)"
       />
-      <button type="button">Submit</button>
+      <button type="button" @click="$emit('submit', emailText)">Submit</button>
     </div>
   </div>
 </template>
