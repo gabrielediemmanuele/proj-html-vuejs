@@ -50,25 +50,25 @@ export default {
       console.log(index);
     },
 
-    autoPlay() {
+    /* autoPlay() {
       if (!this.autoplay) {
         this.autoplay = setInterval(() => {
           this.goNext();
         }, 3000);
       }
-    },
+    }, */
 
-    autoStop() {
+    /* autoStop() {
       if (this.autoplay) {
         clearInterval(this.autoplay);
         this.autoplay = true;
       }
-    },
+    }, */
   },
 
-  created() {
+  /* created() {
     this.autoPlay();
-  },
+  }, */
 };
 </script>
 
@@ -84,12 +84,12 @@ export default {
       >
     </div>
     <!--* members cards cont cont-->
-    <div class="cards-cont" @mouseOver="autoStop()" @mouseLeave="autoPlay()">
+    <div class="cards-cont">
       <!--!  card cont  -->
       <div
         class="card"
         v-for="(member, index) in cardMembers"
-        :key="memberName"
+        :key="index"
         @click="clickCard(index)"
         :class="index == activeCard ? 'active' : ''"
       >

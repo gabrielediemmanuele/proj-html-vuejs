@@ -33,7 +33,7 @@ export default {
   methods: {
     getEmail() {
       let newEmail = this.emailText;
-      newEmail.push(emailList);
+      this.emailList.push(newEmail);
       console.log(this.emailText);
       console.log(this.emailList);
     },
