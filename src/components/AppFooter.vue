@@ -1,4 +1,7 @@
 <script>
+//import BackToTop
+import BackToTop from "vue-backtotop";
+
 export default {
   data() {
     return {
@@ -13,6 +16,7 @@ export default {
       ],
     };
   },
+  components: { BackToTop },
 };
 </script>
 
@@ -45,9 +49,13 @@ export default {
           </div>
         </div>
       </div>
-      <div class="arrow-up">
-        <font-awesome-icon icon="fa-solid fa-arrow-up" />
-      </div>
+      <back-to-top @scrolled="myFunction">
+        <div class="arrow-up">
+          <button type="button" class="btn btn-info btn-to-top">
+            <font-awesome-icon icon="fa-solid fa-arrow-up" />
+          </button>
+        </div>
+      </back-to-top>
     </div>
   </footer>
 </template>
@@ -64,7 +72,7 @@ export default {
   .arrow-up {
     width: 25px;
     height: 25px;
-    padding: 15px 55px 15px 10px;
+    padding: 15px 100px 15px 10px;
     color: white;
     background-color: $purple_color;
     border-radius: 10px 0 0 10px;
@@ -74,13 +82,21 @@ export default {
     justify-content: flex-start;
 
     position: absolute;
-    right: 0px;
-    bottom: 50px;
+    right: -35px;
+    bottom: 40px;
+
+    //btn
+    .btn {
+      color: $white_color;
+      background-color: transparent;
+      border: none;
+    }
 
     &:hover {
       background-color: $orange-color;
       color: $white_color;
       cursor: pointer;
+      border: $orange-color;
     }
   }
 }
