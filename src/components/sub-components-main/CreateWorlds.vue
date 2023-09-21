@@ -92,23 +92,23 @@ export default {
 
     input {
       width: 100%;
-      padding: 10px 20px;
+      padding: 20px 20px;
       border: none;
-      border-radius: 20px;
+      border-radius: 30px;
       /* outline: none; */
     }
 
     button {
       position: absolute;
-      top: 3px;
-      right: 5px;
-      padding: 7px 15px;
+      top: 9px;
+      right: 7px;
+      padding: 11px 17px;
       z-index: 2;
       border-radius: 25px;
       border: none;
       cursor: pointer;
-      color: $purple_color;
-      background-color: $pink_color;
+      color: #311852;
+      background-color: #ffdfed;
     }
 
     button:hover {
