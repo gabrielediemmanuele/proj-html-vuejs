@@ -28,12 +28,19 @@ export default {
 
 <template>
   <main class="main-container">
+    <!--! Agency Skills and features  -->
     <LoveAnimation></LoveAnimation>
+    <!--! Agency Scores  -->
     <AnidioQuick></AnidioQuick>
+    <!--! Agency Work Gallery -->
     <OurWorks></OurWorks>
+    <!--! Agency Process  -->
     <OurProcess></OurProcess>
+    <!--! Agency Team Members  -->
     <AnidioTeamMembers></AnidioTeamMembers>
+    <!--! Agency - Partners  -->
     <WhyAnidio></WhyAnidio>
+    <!--! Agency Submit Section  -->
     <CreateWorlds></CreateWorlds>
   </main>
 </template>
