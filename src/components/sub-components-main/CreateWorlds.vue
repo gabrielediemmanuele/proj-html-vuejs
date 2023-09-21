@@ -25,6 +25,7 @@ export default {
         name=""
         id=""
         placeholder="Enter here your E-mail..."
+        v-model="Text"
       />
       <button type="button">Submit</button>
     </div>
@@ -93,7 +94,7 @@ export default {
       padding: 20px 20px;
       border: none;
       border-radius: 30px;
-      /* outline: none; */
+      outline: none;
     }
 
     button {
