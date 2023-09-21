@@ -119,6 +119,12 @@ export default {
   align-items: center;
   border-radius: 20px;
 
+  &:hover {
+    box-shadow: 0px 0px 6px 1px gray;
+    transform: scale(1.1);
+    transition: 1s;
+  }
+
   img {
     width: 50px;
     margin-bottom: 15px;
