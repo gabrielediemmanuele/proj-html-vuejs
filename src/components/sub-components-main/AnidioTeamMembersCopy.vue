@@ -1,4 +1,8 @@
 <script>
+//SLIDER
+import { VueperSlides, VueperSlide } from "vueperslides";
+import "vueperslides/dist/vueperslides.css";
+
 export default {
   data() {
     return {
@@ -26,6 +30,7 @@ export default {
       ],
     };
   },
+  components: { VueperSlides, VueperSlide },
 };
 </script>
 
