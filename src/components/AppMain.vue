@@ -5,6 +5,7 @@ import AnidioQuick from "../components/sub-components-main/AnidioQuick.vue";
 import OurWorks from "../components/sub-components-main/OurWorks.vue";
 import OurProcess from "../components/sub-components-main/OurProcess.vue";
 import AnidioTeamMembers from "../components/sub-components-main/AnidioTeamMembers.vue";
+import AnidioTeamMembersCopy from "../components/sub-components-main/AnidioTeamMembersCopy.vue";
 import WhyAnidio from "../components/sub-components-main/WhyAnidio.vue";
 import CreateWorlds from "../components/sub-components-main/CreateWorlds.vue";
 
@@ -20,6 +21,7 @@ export default {
     OurWorks,
     OurProcess,
     AnidioTeamMembers,
+    AnidioTeamMembersCopy,
     WhyAnidio,
     CreateWorlds,
   },
@@ -38,6 +40,8 @@ export default {
     <OurProcess></OurProcess>
     <!--* Agency Team Members  -->
     <AnidioTeamMembers></AnidioTeamMembers>
+    <!--! copia di prova per lo slider -->
+    <AnidioTeamMembersCopy></AnidioTeamMembersCopy>
     <!--* Agency - Partners  -->
     <WhyAnidio></WhyAnidio>
     <!--* Agency Submit Section  -->

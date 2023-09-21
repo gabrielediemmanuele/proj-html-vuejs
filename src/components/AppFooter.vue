@@ -72,7 +72,7 @@ export default {
   .arrow-up {
     width: 25px;
     height: 25px;
-    padding: 15px 100px 15px 10px;
+    padding: 15px 60px 15px 10px;
     color: white;
     background-color: $purple_color;
     border-radius: 10px 0 0 10px;
