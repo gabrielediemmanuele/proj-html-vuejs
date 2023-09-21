@@ -26,7 +26,7 @@
 
 ## Priority
 
-I will try to work in a component layout from the begin to the end, next i start with the next.
+I will try to work in a component layout from the begin to the end, next i start with the extra features.
 
 1. All the layout structure.
 2. Hover effects.
