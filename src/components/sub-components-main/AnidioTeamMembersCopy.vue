@@ -24,7 +24,50 @@ export default {
           memberRole: "Senior Dev. Full Stack",
         }, */
       ],
+      activeCard: 0,
+      autoplay: false,
     };
+  },
+  //slider methods
+  methods: {
+    goNext() {
+      if (this.activeCard < this.cardMembers.length - 1) {
+        this.activeCard++;
+      } else {
+        this.activeCard = 0;
+      }
+    },
+    goPrev() {
+      if (this.activeCard > 0) {
+        this.activeCard--;
+      } else {
+        this.activeCard = this.cardMembers.length - 1;
+      }
+    },
+
+    clickCard(index) {
+      this.activeCard = index;
+      console.log(index);
+    },
+
+    autoPlay() {
+      if (!this.autoplay) {
+        this.autoplay = setInterval(() => {
+          this.goNext();
+        }, 3000);
+      }
+    },
+
+    autoStop() {
+      if (this.autoplay) {
+        clearInterval(this.autoplay);
+        this.autoplay = true;
+      }
+    },
+  },
+
+  created() {
+    this.autoPlay();
   },
 };
 </script>
@@ -41,9 +84,15 @@ export default {
       >
     </div>
     <!--* members cards cont cont-->
-    <div class="cards-cont">
+    <div class="cards-cont" @mouseOver="autoStop()" @mouseLeave="autoPlay()">
       <!--!  card cont  -->
-      <div class="card" v-for="member in cardMembers" :key="memberName">
+      <div
+        class="card"
+        v-for="(member, index) in cardMembers"
+        :key="memberName"
+        @click="clickCard(index)"
+        :class="index == activeCard ? 'active' : ''"
+      >
         <img :src="member.memberImage" :alt="member.memberName" />
         <h3>{{ member.memberName }}</h3>
         <span>{{ member.memberRole }}</span>
@@ -64,14 +113,12 @@ export default {
     </div>
     <!--* slider arrows-->
     <div class="arrows-cont">
-      <div class="arrow-bubble">
+      <div class="arrow-bubble" @click="goPrev()">
         <font-awesome-icon icon="fa-solid fa-arrow-left" size="xl" />
       </div>
-      <span class="slider-dot"></span>
-      <span class="slider-dot"></span>
-      <span class="slider-dot"></span>
-      <span class="slider-dot"></span>
-      <div class="arrow-bubble">
+      <span class="slider-dot" v-for="index in cardMembers"></span>
+
+      <div class="arrow-bubble" @click="goNext()">
         <font-awesome-icon icon="fa-solid fa-arrow-right" size="xl" />
       </div>
     </div>
@@ -117,6 +164,14 @@ export default {
   }
 }
 
+.active {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 6px 2px gray;
+  transition: 1s;
+}
+.orangeDot {
+  background-color: $orange_color;
+}
 //cards
 .cards-cont {
   width: 80%;
@@ -135,7 +190,7 @@ export default {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-
+    border-radius: 20px;
     position: relative;
 
     //card > background

@@ -70,7 +70,6 @@ export default {
       <span class="slider-dot"></span>
       <span class="slider-dot"></span>
       <span class="slider-dot"></span>
-      <span class="slider-dot"></span>
       <div class="arrow-bubble">
         <font-awesome-icon icon="fa-solid fa-arrow-right" size="xl" />
       </div>
