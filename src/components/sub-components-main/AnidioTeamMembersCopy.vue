@@ -116,7 +116,12 @@ export default {
       <div class="arrow-bubble" @click="goPrev()">
         <font-awesome-icon icon="fa-solid fa-arrow-left" size="xl" />
       </div>
-      <span class="slider-dot" v-for="index in cardMembers"></span>
+      <span
+        class="slider-dot"
+        v-for="(dot, index) in cardMembers.length"
+        :key="index"
+        :class="index == activeCard ? 'orange-dot' : ''"
+      ></span>
 
       <div class="arrow-bubble" @click="goNext()">
         <font-awesome-icon icon="fa-solid fa-arrow-right" size="xl" />
@@ -168,9 +173,6 @@ export default {
   transform: scale(1.1);
   box-shadow: 0px 0px 6px 2px gray;
   transition: 1s;
-}
-.orangeDot {
-  background-color: $orange_color;
 }
 //cards
 .cards-cont {
@@ -259,7 +261,9 @@ export default {
   align-items: center;
   justify-content: center;
   padding: 20px;
-
+  .orange-dot {
+    background-color: orange !important;
+  }
   .slider-dot {
     width: 10px;
     height: 10px;
