@@ -35,6 +35,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../partials/variables";
+//navigation menu
 .nav-cont {
   width: 80%;
   margin: 0 auto;
@@ -61,6 +62,8 @@ export default {
     }
   }
 }
+
+//button
 .button {
   background-color: $pink_color;
   &:hover {
