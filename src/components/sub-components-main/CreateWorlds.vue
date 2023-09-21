@@ -11,11 +11,11 @@ export default {
   <div class="create-worlds">
     <!--*  contents  -->
     <div class="contents-cont">
-      <span class="slogan">Imagine, Create, Experience</span>
-      <h1 class="title">We Animate Whit Ninja-Like Precision</h1>
+      <span class="slogan">We Create New Worlds! </span>
+      <h1 class="title">Want Tips On Your Storytelling?</h1>
       <span class="spanning"
-        >We are a character-driven animation studio striving to make
-        high-quality animations.</span
+        >Join our newsletter for tips how to elevate your brand through
+        storytelling.</span
       >
     </div>
     <!--*submit container-->
@@ -64,7 +64,7 @@ export default {
     text-align: center;
     border: 1px dashed orange;
     .slogan {
-      font-size: 15px;
+      font-size: 18px;
       color: $orange_color;
       margin: 5px 0;
     }
@@ -79,6 +79,9 @@ export default {
       font-size: 15px;
       color: $white_color;
       margin: 10px 0;
+      font-weight: 500;
+      letter-spacing: 5px;
+      line-height: 25px;
     }
   }
 

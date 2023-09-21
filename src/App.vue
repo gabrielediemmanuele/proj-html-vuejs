@@ -1,6 +1,7 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
 import AppMain from "./components/AppMain.vue";
+import AppFooter from "./components/AppFooter.vue";
 
 export default {
   data() {
@@ -10,14 +11,19 @@ export default {
   components: {
     AppHeader,
     AppMain,
+    AppFooter,
   },
 };
 </script>
 
 <template>
   <div class="global-container">
+    <!--* Nav Menù // Jumbotron // Video Player -->
     <AppHeader></AppHeader>
+    <!--* CONTENTS (go to AppMain for explainations ) -->
     <AppMain></AppMain>
+    <!--* Footer -->
+    <AppFooter></AppFooter>
   </div>
 </template>
 
